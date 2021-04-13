@@ -243,6 +243,30 @@ h2 {
     background: url("../images/sched.png") no-repeat 100%;
     background-size: cover;
 }
+#work-7 {
+    background: url("../images/horiseon.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-8 {
+    background: url("../images/quiz.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-9 {
+    background: url("../images/password.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-10 {
+    background: url("../images/ecommerce.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-11 {
+    background: url("../images/employee.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-12 {
+    background: url("../images/team.png") no-repeat 100%;
+    background-size: cover;
+}
 .block::after, .block::before {
     content: '';
     background: rgba(0,0,0,0.6);
@@ -270,7 +294,7 @@ h2 {
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
-    font-size: .8rem;
+    font-size: .5rem;
     letter-spacing: 0.4rem;
     position: absolute;
     border-radius: 10px;
@@ -287,24 +311,28 @@ h2 {
 .works-caption2 {
     text-align: center;
     font-family: "Lato", serif;
-    font-size: .5rem;
-    letter-spacing: 0.4rem;
+    font-size: .3rem;
+    letter-spacing: 0.3rem;
     position: absolute;
-    border-radius: 10px;
+    border-radius: 5px;
     display: block;
-    padding: 18px 2px;
-    width: 28%;
+    padding: 13px 2px;
+    width: 25%;
     left: 20%;
     top:-60%;
     z-index: 1;
     transition: top 0.5s;
 }
 .live {
-    margin-top: 20%;
+    margin-top: 28%;
     margin-left: 2%;
 }
+
 .Github {
     margin-left: 35%;
+}
+.Github2 {
+    margin-left: 20%;
 }
 .block:hover .works-caption2 {
     top: 33%;
@@ -415,7 +443,16 @@ and (max-width: 480px) {
         margin: 5%;
         font-size: 15px;
     }
-    
+    .live {
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+    .Github {
+        margin-left: 35%;
+    }
+    .Github2 {
+        margin-left: 20%;
+    }
 }
 /*screens 481px and 600*/
 @media screen
@@ -461,6 +498,16 @@ and (max-width: 575px) {
     }
     #footer-title {
         margin-top: 2%;
+    }
+    .live {
+        margin-top: 18%;
+        margin-left: 3%;
+    }
+    .Github {
+        margin-left: 38%;
+    }
+    .Github2 {
+        margin-left: 22%;
     }
    
 }
@@ -523,6 +570,7 @@ and (max-width: 768px) {
     #navbar-brand {
         font-size: 14px;
     }
+
 }
 /*screens 769px and 900*/
 @media screen
@@ -579,6 +627,18 @@ and (max-width: 900px) {
     }
     #navbar-brand {
         font-size: 14px;
+    }
+    .works-caption {
+        font-size: .5rem;
+        padding: 14px 2.3px;
+        width: 80%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .3rem;
+        padding: 12px 4px;
+        width: 30%;
+        left: 20%;
     }
 }
 /*screens 901px and 1024*/
@@ -644,6 +704,28 @@ and (max-width: 1389px) {
     #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
         padding: 15px;
     }
+    .works-caption {
+        font-size: 1rem;
+        padding: 14px 2.3px;
+        width: 70%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .5rem;
+        padding: 12px 2px;
+        width: 20%;
+        left: 20%;
+    }
+    .live {
+        margin-top: 20%;
+        margin-left: -1%;
+    }
+    .Github {
+        margin-left: 35%;
+    }
+    .Github2 {
+        margin-left: 20%;
+    }
 }
 /*screen 1201px and bigger, x-large*/
 @media screen 
@@ -707,6 +789,18 @@ and (max-width: 1569px) {
     }
     #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
         padding: 15px;
+    }
+    .works-caption {
+        font-size: .5rem;
+        padding: 14px 2.3px;
+        width: 80%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .3rem;
+        padding: 12px 4px;
+        width: 30%;
+        left: 20%;
     }
 }
 @media screen
