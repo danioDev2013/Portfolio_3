@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="backgroundImg" id="parallax">
+    <section id="parallax">
         <!--navbar with resume, stays here-->
         <nav class="navbar navbar-light" id="nav">
             <!--initials as brand, rounded-->
@@ -39,53 +39,13 @@
                 </ul>
             </article>
         </nav>
-        <section class="container-fluid banner-content" id="site-header">
-            <div class="row" id="wrapperHeader">
-                <!--header section, name and scroll animations-->
-                <header id="site-header">
-                    <section>
-                        <article class="col-12">
-                            <!--js creates the typing effect-->
-                            <h5 class="title" id="title"><p></p></h5>
-                        </article>
-                        <article class="col-12" id="scroll">
-                            <a href="#about-me"><i class="fas fa-chevron-down bounce"></i></a>
-                        </article>        
-                    </section>
-                </header>
-            </div>
-        </section>
     </section>
-
-    <!--about me section-->
-    <main class="main about scroll" id="about">
-        <section class="container-fluid">
-            <article class="row abt-me" id="about-me">
-                <div class="text-center" id="about-me">
-                    <h4 class="about-title">About</h4>
-                    <h4 class="about-title-2">let me introduce myself...</h4>
-                    <div class="img-me">
-                        <img class="img-fluid image-responsive" id="img-me" src="assets/images/me.png">
-                    </div>
-                    <p class="abtMe" id="about-text"> Hi, my name is Danielle Orley. 
-                        I’m detail oriented Full-Stack Web Developer. I recently earned a certificate in full-stack web development, 
-                        from the University of Washington. I want to keep learning and push myself to be the best, to exceed the expectations of clients. 
-                        I take pride in my work and the websites that I build. Working in different work environments, like the military, retail, and 
-                        quality control, has taught me to stay calm, react quickly, and take initiative. I am an extremely hard worker and strive 
-                        for excellence, I am very dedicated to my job. <br>
-                        <br>
-                        My focus is mobile-first responsiveness with HTML, CSS, and JavaScript. I am always experimenting, learning, and I never get bored. 
-                        If you would like to see what I’ve created, scroll down. You can download my resume, by clicking 
-                        the resume button, at the top of the site, <span class="mail"><u>or click here to contact me!</u></span> 
-                    </p>
-                </div>
-            </article>
-        </section>
 
         <!--projects area-->
         <section class="works scroll">
             <article class="container">
-                <h2 class="text-center" id="proj-title"><u>Featured Projects</u></h2>
+                <h2 class="text-center" id="proj-title" style="padding: 5%;"><u>Featured Projects</u></h2>
+                <!--row 1-->
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="block wow rotateInDownLeft"   data-wow-duration="1s" data-wow-delay="0.15s">
@@ -116,24 +76,104 @@
                             <a href="https://github.com/dorley1993/tech_blog" target="_blank" class="works-caption2 more live Github">Github</a>
                         </div>
                     </div>
+                </div>
+
+                <!--row 2-->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="block wow rotateInDownLeft"   data-wow-duration="1s" data-wow-delay="0.15s">
+                            <div class="works-thumb" id="work-4">
+                            </div>
+                            <div class="works-caption">Note Taker</div>
+                            <a href="https://lit-peak-34105.herokuapp.com/" target="_blank" class="works-caption2 more live">Live App</a>
+                            <a href="https://github.com/dorley1993/Note_Taker" target="_blank" class="works-caption2 more live Github">Github</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.3s">
+                            <div class="works-thumb" id="work-5">
+                            </div>
+                            <div class="works-caption">Weather App</div>
+                            <a href="https://dorley1993.github.io/Weather_Dashboard/" target="_blank" class="works-caption2 more live">Live App</a>
+                            <a href="https://github.com/dorley1993/Weather_Dashboard" target="_blank" class="works-caption2 more live Github">Github</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://tech-babble.herokuapp.com/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.45s">
+                            <div class="works-thumb" id="work-6">
+                            </div>
+                            <div class="works-caption">Schedular</div>
+                            <a href="https://dorley1993.github.io/Schedule_Your_Day/" target="_blank" class="works-caption2 more live">Live App</a>
+                            <a href="https://github.com/dorley1993/Schedule_Your_Day" target="_blank" class="works-caption2 more live Github">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <!--row 3-->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://obrienceob.github.io/LostNoMore/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration="1s" data-wow-delay="0.15s">
+                            <div class="works-thumb" id="work-1">
+                            </div>
+                            <div class="works-caption">Lost No More App</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.3s">
+                            <div class="works-thumb" id="work-2">
+                            </div>
+                            <div class="works-caption">Whatsinmybel.ly App</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://tech-babble.herokuapp.com/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.45s">
+                            <div class="works-thumb" id="work-3">
+                            </div>
+                            <div class="works-caption">Tech Babble App</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://obrienceob.github.io/LostNoMore/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration="1s" data-wow-delay="0.15s">
+                            <div class="works-thumb" id="work-1">
+                            </div>
+                            <div class="works-caption">Lost No More App</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.3s">
+                            <div class="works-thumb" id="work-2">
+                            </div>
+                            <div class="works-caption">Whatsinmybel.ly App</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="https://tech-babble.herokuapp.com/" target="_blank"></a>
+                        <div class="block wow rotateInDownLeft"   data-wow-duration=".8s" data-wow-delay="0.45s">
+                            <div class="works-thumb" id="work-3">
+                            </div>
+                            <div class="works-caption">Tech Babble App</div>
+                        </div>
+                    </div>
                     <div class="justify-content-center d-flex col-12">
-                        <a href="projects.html" class="moreBtn" id="more_Projs">More</a>
+                        <a href="index.html" class="moreBtn">Home</a>
                     </div>
                 </div>
             </article>
         </section>
         
-        <!--Contact Area-->
-        <section class="container-fluid">
-            <h2 class="text-center"></h2>
-            <p></p>
-            <article class="row">
-            </article>
-        </section>
 
         <!--Footer with social icons-->
         <footer class="container-fluid custom-footer">
-            <h2 class="text-center" id="footer-title">GET IN TOUCH</h2>
+            <h2 class="text-center" id="footer-title" style="padding-top: 5%;">GET IN TOUCH</h2>
             <div class="row contact">
                 <div class="col-12">
                     <div class="contacts-data text-center">

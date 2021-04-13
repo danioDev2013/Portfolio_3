@@ -231,6 +231,18 @@ h2 {
     background: url("../images/techBabble.png") no-repeat 100%;
     background-size: cover;
 }
+#work-4 {
+    background: url("../images/note.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-5 {
+    background: url("../images/weather.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-6 {
+    background: url("../images/sched.png") no-repeat 100%;
+    background-size: cover;
+}
 .block::after, .block::before {
     content: '';
     background: rgba(0,0,0,0.6);
@@ -258,7 +270,7 @@ h2 {
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
-    font-size: .5rem;
+    font-size: .8rem;
     letter-spacing: 0.4rem;
     position: absolute;
     border-radius: 10px;
@@ -267,14 +279,40 @@ h2 {
     width: 65%;
     left: 20%;
     top:-40%;
-    z-index: 1;
+    z-index: 2;
     color: #fff;
     border: 2px solid #fff;
     transition: top 0.5s;
 }
+.works-caption2 {
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: .5rem;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 18px 2px;
+    width: 28%;
+    left: 20%;
+    top:-60%;
+    z-index: 1;
+    transition: top 0.5s;
+}
+.live {
+    margin-top: 20%;
+    margin-left: 2%;
+}
+.Github {
+    margin-left: 35%;
+}
+.block:hover .works-caption2 {
+    top: 33%;
+}
 .block:hover .works-caption {
     top: 33%;
 }
+
 .works h2 {
     margin: 7% 0;
 }
