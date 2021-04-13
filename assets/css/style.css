@@ -21,7 +21,7 @@ a:hover {
 
 /*creates the background at top*/
 .backgroundImg {
-    background-image: url("/assets/images/snow.png");  
+    background-image: url("../images/snow.png");  
     background-size: cover;
     background-repeat: no-repeat;
     background-position: absolute; 
