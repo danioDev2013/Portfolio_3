@@ -10,7 +10,7 @@
 /*the hyperlinks color, important
 to override the bootstrap components, also scroll color*/
 a,
-.email:hover {
+.email:hover{
     color: rgb(190, 152, 221) !important;
 }
 
@@ -28,6 +28,8 @@ a:hover {
     z-index: -10;
     padding-bottom: 5rem;
 }
+
+
 
                                 /*navbar*/
 #nav {
@@ -60,7 +62,7 @@ a:hover {
     text-decoration: none;
     background: rgb(190, 152, 221);
     padding: 10px;
-    border-radius: 5%;
+    border-radius: 2%;
     display: inline-block;
     border: none;
     text-align: center;
@@ -324,13 +326,10 @@ h2 {
     transition: top 0.5s;
 }
 .live {
-    margin-top: 28%;
+    margin-top: 15%;
     margin-left: 2%;
 }
 
-.Github {
-    margin-left: 35%;
-}
 .Github2 {
     margin-left: 20%;
 }
@@ -726,6 +725,14 @@ and (max-width: 1389px) {
     .Github2 {
         margin-left: 20%;
     }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
+    }
 }
 /*screen 1201px and bigger, x-large*/
 @media screen 
@@ -802,6 +809,14 @@ and (max-width: 1569px) {
         width: 30%;
         left: 20%;
     }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
+    }
 }
 @media screen
 and (min-width: 1570px)
@@ -864,5 +879,13 @@ and (max-width: 2500px) {
     }
     #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
         padding: 15px;
+    }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
     }
 }
