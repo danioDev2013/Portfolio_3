@@ -19,6 +19,7 @@ a:hover {
     color: rgba(152, 103, 192, 0.432);
 }
 
+
 /*creates the background at top*/
 .backgroundImg {
     background-image: url("../images/snow.png");  
@@ -287,12 +288,16 @@ h2 {
     right: -50%;
     transition: 0.5s;
 }
-.block:hover:after {
+.block:hover:after, element.hover_effect {
     left: 0;
 }
-.block:hover:before {
+.block:hover:before, element.hover_effect {
     right: 0;
 }
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;        
+    }
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
