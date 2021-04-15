@@ -1,12 +1,14 @@
 /*Custom CSS*/
-/*scroll smoothly for the entire page*/
+/*scroll smoothly for the entire page, font*/
 * {
     scroll-behavior: smooth;
     font-family: 'PT Serif', serif;
 }
+/*clears padding*/
 .main {
     padding: 0%;
 }
+
 /*the hyperlinks color, important
 to override the bootstrap components, also scroll color*/
 a,
@@ -25,8 +27,7 @@ a:hover {
     background-image: url("../images/snow.png");  
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: absolute; 
-    z-index: -10;
+    background-position: absolute;
     padding-bottom: 5rem;
 }
 
@@ -50,12 +51,13 @@ a:hover {
 #navbar-brand {
     padding: 2%;
 }
-
+/*nav resume button*/
 #nav > article > ul > li > a > button {
     padding: 10%;
     font-size: 8px;
     margin-right: 10px;
 }
+/*buttons*/
 .more,
 .moreBtn {
     color: #fff !important;
@@ -75,14 +77,14 @@ a:hover {
         -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
         transition: all 0.4s ease 0s;
     } 
-
+/*title color*/
 h1,
 h2 {
     color: rgb(190, 152, 221);
-    text-align: center;
 }
 
                             /*Title on page*/
+/*Hi, my name is Danielle coloring and positioning*/                            
 #title {
     font-family: 'PT Serif', serif;
     position: relative;
@@ -91,6 +93,7 @@ h2 {
     color: rgb(190, 152, 221);
     margin-top: 7rem;
 }
+/*padding on the main section*/
 #site-header > section > article:nth-child(1){
     padding: 0;
 }
@@ -102,7 +105,7 @@ h2 {
     text-align: center;
     margin-top: 7rem;
 }
-
+/*animation of the arrow*/
 @-webkit-keyframes bounce {
     0%,
     20%,
@@ -156,22 +159,14 @@ h2 {
       transform: translateY(-15px);
     }
   }
-  
   .bounce {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
   }
-
-  .about-title-2 {
-	font-size: 2.3em;
-	margin: 0.67em 0;
-    display: flex;
-    justify-content: center;
-}
+  
 
 
                                     /*about area*/
-
 .abt-me {
     background-color: rgb(190, 152, 221);
     color: white;
@@ -180,14 +175,21 @@ h2 {
     padding-top: 1rem;
     font-family: 'Shadows Into Light Two', cursive;
 }
+.about-title-2 {
+	font-size: 2.3em;
+	margin: 0.67em 0;
+    display: flex;
+    justify-content: center;
+}
 #about-me > h4.about-title-2 {
     margin: 0;
     font-size: 1.6rem;
 }
 #about-text {
     font-size: 12px;
+    padding: 5px;
 }
-/*image border around it*/
+/*image border around pic*/
 #img-me {
     border: 1px solid rgb(229, 229, 230);
     padding: 5px;
@@ -204,6 +206,7 @@ h2 {
 #proj-title {
     margin: 0;
 }
+/*the pic block*/
 .block {
     box-shadow: 4px 4px 7px #333;
     overflow: hidden;
@@ -214,18 +217,18 @@ h2 {
     padding-bottom: 3%;
     background: #fff;
 }
+/*creates width of the card*/
 .works-thumb {
     height: 200px;
 }
 #about > section.works.scroll > article > div > div > div {
     margin-top: 1rem;
 }
-
+/*All the images*/
 #work-1 {
     background: url("../images/lostNoMore.png") no-repeat 100%;
     background-size: cover;
 }
-
 #work-2 {
     background: url("../images/whatsinmybelly.png") no-repeat 100%;
     background-size: cover;
@@ -288,6 +291,7 @@ h2 {
     right: -50%;
     transition: 0.5s;
 }
+/*hovering effect*/
 .block:hover:after, element.hover_effect {
     left: 0;
 }
@@ -298,6 +302,7 @@ h2 {
     -webkit-user-select: none;
     -webkit-touch-callout: none;        
     }
+/*captions*/
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
@@ -315,6 +320,7 @@ h2 {
     border: 2px solid #fff;
     transition: top 0.5s;
 }
+/*caption 2*/
 .works-caption2 {
     text-align: center;
     font-family: "Lato", serif;
@@ -330,13 +336,14 @@ h2 {
     z-index: 1;
     transition: top 0.5s;
 }
+/*github*/
 .live {
-    margin-top: 15%;
-    margin-left: 2%;
+    margin-top: 5%;
+    margin-left: 10%;
 }
-
 .Github2 {
-    margin-left: 20%;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 .block:hover .works-caption2 {
     top: 33%;
@@ -363,6 +370,7 @@ h2 {
 
 
                                     /*footer style*/
+
 .custom-footer {
     background-color:#26272b;
     left: 0;
@@ -370,17 +378,17 @@ h2 {
     width: 100%;
     color:#737373;
     position: relative;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 #about > footer {
-    padding-top: 3%;
+    padding-top: 1%;
 }
 #footer-title {
     font-size: 1.2rem;
     margin-top: 10%;
 }
 .contact {
-    margin: 5% 0;
+    margin: 8% 0;
 }
 .hire {
     font-size: 12px;
@@ -392,8 +400,8 @@ h2 {
 }
 .fa-paper-plane {
     padding-right: 3px;
-
 }
+
 .copyright-text,
 .contact-text {
     font-size: 12px;
@@ -722,17 +730,14 @@ and (max-width: 1389px) {
     }
     .live {
         margin-top: 20%;
-        margin-left: -1%;
-    }
-    .Github {
-        margin-left: 35%;
+        margin-left: 1%;
     }
     .Github2 {
         margin-left: 20%;
     }
     .live {
         margin-top: 15%;
-        margin-left: 2%;
+        margin-left: 20%;
     }
     
     .Github2 {
@@ -803,24 +808,25 @@ and (max-width: 1569px) {
         padding: 15px;
     }
     .works-caption {
-        font-size: .5rem;
+        font-size: 1rem;
         padding: 14px 2.3px;
         width: 80%;
         left: 11%;  
     }
     .works-caption2 {
-        font-size: .3rem;
+        font-size: 1rem;
         padding: 12px 4px;
         width: 30%;
         left: 20%;
     }
     .live {
-        margin-top: 15%;
-        margin-left: 2%;
+        margin-top: 18%;
+        margin-left: 15%;
     }
     
     .Github2 {
-        margin-left: 20%;
+        margin-top: 18%;
+        margin-left: 15%;
     }
 }
 @media screen
