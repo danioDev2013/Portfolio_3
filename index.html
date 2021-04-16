@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="backgroundImg" id="parallax">
+    <section class="backgroundImg">
         <!--navbar with resume, stays here-->
         <nav class="navbar navbar-light" id="nav">
             <!--initials as brand, rounded-->
@@ -32,88 +32,108 @@
                 <ul class="nav navbar-nav">
                     <!--Resume link-->
                     <li class="nav-item">
-                        <a download href="assets/resume copy.zip" class="nav-link custom-menu">
+                        <a download href="assets/resume copy.zip" class="nav-link resumeBtn">
                             <button class="more show">Resume</button>
                         </a>
                     </li>
                 </ul>
             </article>
         </nav>
+
+        
         <section class="container-fluid banner-content" id="site-header">
-            <div class="row" id="wrapperHeader">
+            <div id="wrapperHeader">
                 <!--header section, name and scroll animations-->
                 <header id="site-header">
                     <section>
-                        <article class="col-12">
+                        <article >
                             <!--js creates the typing effect-->
-                            <h5 class="title" id="title"><p></p></h5>
-                        </article>
-                        <article class="col-12" id="scroll">
-                            <a href="#about-me"><i class="fas fa-chevron-down bounce"></i></a>
+                            <h5 class="title text-center" id="title"><p></p></h5>
                         </article>        
                     </section>
                 </header>
+            </div>
+            <div class="row">
+                <article class="col-12" id="scroll">
+                    <!--Create Bounce-->
+                    <a href="#about"><i class="fas fa-chevron-down bounce"></i></a>
+                </article>
             </div>
         </section>
     </section>
 
     <!--about me section-->
-    <main class="main about scroll" id="about">
-        <section class="container-fluid">
-            <article class="row abt-me" id="about-me">
-                <div class="text-center" id="about-me">
-                    <h4 class="about-title">About</h4>
-                    <h4 class="about-title-2">let me introduce myself...</h4>
-                    <div class="img-me">
-                        <img class="img-fluid image-responsive" id="img-me" src="assets/images/me.png">
+    <main class="main">
+        <section class="container-fluid hide" id="about">
+            <article class="row" id="aboutWrapper">
+                <div class="text-center abtMe" id="about-me">
+                    <h4 class="abtMe" id="aboutTitle">About</h4>
+                    <h4 class="abtMe" id="aboutTitle2">let me introduce myself...</h4>
+                    <div class="imgMe">
+                        <img class="img-fluid image-responsive" id="img-me" src="assets/images/me.png" style="max-width: 250px;">
                     </div>
-                    <p class="abtMe" id="about-text"> Hi, my name is Danielle Orley. 
-                        I am a detail oriented Full-Stack Web Developer. I recently earned a certificate in full-stack web development, 
-                        from the University of Washington. I want to keep learning and push myself to be the best, to exceed the expectations of my clients. 
-                        I take pride in my work and the websites that I build. Working in different work environments, like the military, retail, and 
-                        quality control, has taught me to stay calm, react quickly, and take initiative. I am an extremely hard worker and strive 
-                        for excellence, I am very dedicated to my job. <br>
+                    <p class="abtMe" id="aboutText">Hi, my name is Danielle Orley. I’m a detail oriented Full-Stack Web Developer, 
+                        who recently earned a certificate in web development from the University of Washington. I want to keep learning about the things 
+                        I enjoy and push myself to be a better developer. I take pride in my work and the websites I’ve worked on.  Working in the military, 
+                        retail, and quality control, has taught me to stay calm, react quickly, and take initiative. I’m a hard worker and strive for excellence.<br>
                         <br>
-                        My focus is mobile-first responsiveness with HTML, CSS, and JavaScript. I am always experimenting, learning, and I never get bored. 
-                        If you would like to see what I’ve created, scroll down. You can download my resume, by clicking 
-                        the resume button, at the top of the site, <span href="contact.html" class="mail"><u> click here to contact me!</u></span> 
+                        My focus is mobile-first responsiveness with HTML, CSS, and JavaScript. 
+                        Then I focus on the functionality of the website with Node.js, Express, MySql, and MongoDB. 
+                        I’m always learning and experimenting with different languages and tools, and I never get bored. I
+                        f you would like to see what I’ve created before scroll down. If you want to get ahold of me download 
+                        my resume or <span class="mail"><u> click here to contact me!</u></span> 
                     </p>
                 </div>
             </article>
         </section>
 
         <!--projects area-->
-        <section class="works scroll">
+        <section class="works hide">
             <article class="container">
                 <h2 class="text-center" id="proj-title"><u>Featured Projects</u></h2>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="block wow rotateInDownLeft hover"   data-wow-duration="1s" data-wow-delay="0.15s">
-                            <div class="works-thumb" id="work-1">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://obrienceob.github.io/LostNoMore/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-1"></div>
                             </div>
-                            <div class="works-caption"><a href="https://obrienceob.github.io/LostNoMore/" target="_blank" style="color: aliceblue !important;">Lost No More</a></div>
-                                <a href="https://github.com/dorley1993/LostNoMore" target="_blank" class="works-caption2 live Github"><i class="fab fa-github fa-2x"></i></a>
-                        </div>
+                            <div class="text-center">
+                                <a href="https://obrienceob.github.io/LostNoMore/" target="_blank">Lost No More</a>
+                            </div>
+                            <div class="text-center"> 
+                                <a href="https://github.com/dorley1993/LostNoMore" target="_blank" class="works-caption"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="block wow rotateInDownLeft hover"   data-wow-duration=".8s" data-wow-delay="0.3s">
-                            <div class="works-thumb" id="work-2">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-2"></div>
                             </div>
-                            <div class="works-caption"><a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank" style="color: aliceblue !important;">Whatsinmybel.ly</a></div>
-                            <a href="https://github.com/dorley1993/whatsinmybel.ly" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
-                        </div>
+                            <div class="text-center">
+                                <a href="https://morning-savannah-50964.herokuapp.com/signin/" target="_blank">Whatsinmybel.ly</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/whatsinmybel.ly" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="block wow rotateInDownLeft hover"   data-wow-duration=".8s" data-wow-delay="0.45s">
-                            <div class="works-thumb" id="work-3">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://tech-babble.herokuapp.com/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-3"></div>
                             </div>
-                            <div class="works-caption"><a href="https://tech-babble.herokuapp.com/" target="_blank" style="color: aliceblue !important;">Tech Babble</a></div>
-                            <a href="https://github.com/dorley1993/tech_blog" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
-                        </div>
+                            <div class="text-center">
+                                <a href="https://tech-babble.herokuapp.com/" target="_blank">Tech Babble</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/tech_blog" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
                     </div>
-                    <div class="justify-content-center d-flex col-12">
+                    <div class="justify-content-center d-flex col-12" style="padding: 4%;">
                         <a href="projects.html" class="moreBtn" id="more_Projs">More</a>
                     </div>
                 </div>
@@ -122,7 +142,7 @@
         
         <!--Contact Area-->
         <section class="container-fluid">
-            <h2 class="text-center"></h2>
+            <h2 class="text-center hidden"></h2>
             <p></p>
             <article class="row">
             </article>
@@ -130,12 +150,13 @@
 
         <!--Footer with social icons-->
         <footer class="container-fluid custom-footer">
-            <h2 class="text-center" id="footer-title">GET IN TOUCH</h2>
             <div class="row contact">
                 <div class="col-12">
+                    
                     <div class="contacts-data text-center">
+                        <h1 id="connectMe">Connect With Me</h1>
                         <a href="mailto:danio.2013@outlook.com" title="email" rel="me" class="contact-text" target="_blank">
-                            <i class="fa fa-paper-plane fa-2x"></i>danio.2013@outlook.com
+                            danio.2013@outlook.com
                         </a>
                     </div>
                     <div class="contacts-data">
@@ -168,17 +189,19 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="text-center">
+                        <p class="copyright-text">Copyright &copy; <script>document.write(new Date().getFullYear()) </script>
+                        <span id="name">Danielle Orley</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="text-center col-12">
-                    <p class="copyright-text">Copyright &copy; <script>document.write(new Date().getFullYear()) </script>
-                    <span id="name">Danielle Orley</span>
-                    </p>
-                </div>
+                
             </div>
         </footer>
     </main>
     
 </body>
+
  <!--Javascript links-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
