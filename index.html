@@ -23,7 +23,7 @@
 <body>
     <section class="backgroundImg">
         <!--navbar with resume, stays here-->
-        <nav class="navbar navbar-light" id="nav">
+        <nav class="navbar navbar-light hidden" id="nav">
             <!--initials as brand, rounded-->
             <a href="index.html" class="navbar-brand" id="navbar-brand">&lt;DO&gt;</a>
             
@@ -32,7 +32,7 @@
                 <ul class="nav navbar-nav">
                     <!--Resume link-->
                     <li class="nav-item">
-                        <a download href="assets/resume copy.zip" class="nav-link resumeBtn">
+                        <a download href="assets/resume.zip" class="nav-link resumeBtn">
                             <button class="more show">Resume</button>
                         </a>
                     </li>
@@ -41,7 +41,8 @@
         </nav>
 
         
-        <section class="container-fluid banner-content" id="site-header">
+        
+        <section class="container-fluid hidden banner-content" id="site-header">
             <div id="wrapperHeader">
                 <!--header section, name and scroll animations-->
                 <header id="site-header">
@@ -53,7 +54,7 @@
                     </section>
                 </header>
             </div>
-            <div class="row">
+            <div class="row" id="rowBounce">
                 <article class="col-12" id="scroll">
                     <!--Create Bounce-->
                     <a href="#about"><i class="fas fa-chevron-down bounce"></i></a>
@@ -64,7 +65,7 @@
 
     <!--about me section-->
     <main class="main">
-        <section class="container-fluid hide" id="about">
+        <section class="container-fluid hidden" id="about">
             <article class="row" id="aboutWrapper">
                 <div class="text-center abtMe" id="about-me">
                     <h4 class="abtMe" id="aboutTitle">About</h4>
@@ -81,16 +82,17 @@
                         Then I focus on the functionality of the website with Node.js, Express, MySql, and MongoDB. 
                         I’m always learning and experimenting with different languages and tools, and I never get bored. I
                         f you would like to see what I’ve created before scroll down. If you want to get ahold of me download 
-                        my resume or <span class="mail"><u> click here to contact me!</u></span> 
+                        my resume or <a href="contact.html" class="mail" id="clickHere" style="color: antiquewhite !important;"><u> click here to contact me!</u></a> 
                     </p>
                 </div>
             </article>
         </section>
 
         <!--projects area-->
-        <section class="works hide">
-            <article class="container">
-                <h2 class="text-center" id="proj-title"><u>Featured Projects</u></h2>
+        <section class="works scroll">
+            <article class="container-fluid">
+                <h2 class="text-center" id="proj-title" style="padding: 5%;"><u>Featured Projects</u></h2>
+                <!--row 1-->
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12" id="live">
                         <a href="https://obrienceob.github.io/LostNoMore/" target="_blank">
@@ -133,20 +135,147 @@
                             </div>
                         </a>
                     </div>
-                    <div class="justify-content-center d-flex col-12" style="padding: 4%;">
-                        <a href="projects.html" class="moreBtn" id="more_Projs">More</a>
+                </div>
+
+                <!--row 2-->
+                <div class="row" id="projects-row2" style="display: none;">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://lit-peak-34105.herokuapp.com/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-4"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://lit-peak-34105.herokuapp.com/" target="_blank">Note Taker</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Note_Taker" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://dorley1993.github.io/Weather_Dashboard/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-5"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://dorley1993.github.io/Weather_Dashboard/ " target="_blank">Weather App</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Weather_Dashboard" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://dorley1993.github.io/Schedule_Your_Day/" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-6"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://dorley1993.github.io/Schedule_Your_Day/ " target="_blank">Schedular</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Schedule_Your_Day" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--row 3-->
+                <div class="row" id="projects-row3" style="display: none;">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://github.com/dorley1993/Horiseon.Website" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-7"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Horiseon.Website" target="_blank">Horiseon</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://dorley1993.github.io/Horiseon.Website/" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://dorley1993.github.io/code_quiz//" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-8"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://dorley1993.github.io/code_quiz//" target="_blank">Code Quiz</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/code_quiz/" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://dorley1993.github.io/Password-Generator/" target="_blank" >
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-9"></div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://dorley1993.github.io/Password-Generator/" target="_blank" >Password Generator</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Password-Generator" target="_blank" class="works-caption2 live"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!--row 4-->
+                <div class="row" id="projects-4" style="display: none;">
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://github.com/dorley1993/e-commerceDB" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-10"></div>
+                            </div>
+                            <div class="text-center">
+                                <div class="works-caption">E-commerce DB</div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/e-commerceDB" target="_blank" class="works-caption2"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://github.com/dorley1993/employee_tracker" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-11"></div>
+                            </div>
+                            <div class="text-center">
+                                <div class="works-caption">Employee Tracker</div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/employee_tracker" target="_blank" class="works-caption2"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="live">
+                        <a href="https://github.com/dorley1993/Team_Profile_Generator" target="_blank">
+                            <div class="block hover">
+                                <div class="works-thumb" id="work-12"></div>
+                            </div>
+                            <div class="text-center">
+                                <div class="works-caption">Team Profile Generator</div>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/dorley1993/Team_Profile_Generator" target="_blank" class="works-caption2"><i class="fab fa-github fa-2x"></i></a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="justify-content-center d-flex col-12">
+                        <a href="index.html" class="moreBtn">close</a>
                     </div>
                 </div>
             </article>
         </section>
-        
-        <!--Contact Area-->
-        <section class="container-fluid">
-            <h2 class="text-center hidden"></h2>
-            <p></p>
-            <article class="row">
-            </article>
-        </section>
+        <div class="justify-content-center d-flex col-12" style="padding: 4%;" id="projBtn">
+            <button class="moreBtn projBtn" id="more_Projs">More</button>
+        </div>
 
         <!--Footer with social icons-->
         <footer class="container-fluid custom-footer">
@@ -184,7 +313,7 @@
         
                             <!--Icon 4, Email link to contact card-->
                             <li>
-                                <a href="contact.html" style="color: rgb(190, 152, 221)" class="mail" id="mail">
+                                <a href="contact.html" style="color: rgb(190, 152, 221)" class="mail" id="mailI">
                                     <i class="fas fa-envelope-square fa-2x"></i></a>
                             </li>
                         </ul>

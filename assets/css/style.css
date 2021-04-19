@@ -11,6 +11,10 @@ a,
 a:hover {
     color: rgba(152, 103, 192, 0.432);
 }
+.hidden {
+    display: none;
+    animation-delay: 2s;
+}
 
 #nav {
     padding: 1%;
@@ -160,7 +164,6 @@ a:hover {
 }
 
 .works {
-    padding-bottom: 3%;
     background: #fff;
 }
 /*creates width of the card*/
@@ -224,6 +227,8 @@ a:hover {
 }
 #live {
     padding-bottom: 5%;
+    margin: 0% !important;
+    
 }
 
                             /*Buttons*/
