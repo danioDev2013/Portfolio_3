@@ -173,15 +173,15 @@ a:hover {
 
 /*All the images*/
 #work-1 {
-    background: url("../images/lostNoMore.png") no-repeat 100%;
+    background: url("../images/lostNoMore.gif") no-repeat 100%;
     background-size: cover;
 }
 #work-2 {
-    background: url("../images/whatsinmybelly.png") no-repeat 100%;
+    background: url("../images/whatsinmybelly.gif") no-repeat 100%;
     background-size: cover;
 }
 #work-3 {
-    background: url("../images/techBabble.png") no-repeat 100%;
+    background: url("../images/techBabble.gif") no-repeat 100%;
     background-size: cover;
 }
 #work-4 {
