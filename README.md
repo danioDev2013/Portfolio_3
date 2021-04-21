@@ -44,10 +44,10 @@ On my portfolio's hompepage you will find a resume, an introductory, an about me
  * Click any of my social links and follow me!
 <br>
 <br>
-<img src="assets/images/readme/scrolls.gif" width="100%" alt="scroll"/>
+<img src="assets/images/home.gif" width="100%" alt="scroll"/>
 <br>
 <br>
-<img src="assets/images/readme/proj2.gif" width="100%" alt="proj"/>
+<img src="assets/images/readme/moreP.gif" width="100%" alt="proj"/>
 <br>
 <br>
 <img src="assets/images/readme/contact.gif" width="100%" alt="contact"/>
